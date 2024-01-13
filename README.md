@@ -1,4 +1,4 @@
-# make sure you have properly configure settings.py file
+<!-- # make sure you have properly configure settings.py file
 
 # STEP 1:
 
@@ -18,4 +18,4 @@
 
 # STEP 3:
 
-# python setup_nextjs.py --dir frontend/static
+# python setup_nextjs.py --dir frontend/static -->
