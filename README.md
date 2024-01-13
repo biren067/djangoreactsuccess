@@ -1,21 +1,21 @@
-<!-- # make sure you have properly configure settings.py file
+make sure you have properly configure settings.py file
 
-# STEP 1:
+STEP 1:
 
-# ===================== update next.config.js==============
+===================== update next.config.js==============
 
-# const nextConfig = {
+const nextConfig = {
 
-# output: 'export',
+output: 'export',
 
-# }
+}
 
-# module.exports = nextConfig
+module.exports = nextConfig
 
-# STEP 2:
+STEP 2:
 
-# mv out static
+mv out static
 
-# STEP 3:
+STEP 3:
 
-# python setup_nextjs.py --dir frontend/static -->
+python setup_nextjs.py --dir frontend/static
