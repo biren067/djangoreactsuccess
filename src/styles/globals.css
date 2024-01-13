@@ -3,25 +3,54 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --primary-text-color: rgb(43, 42, 42);
+  --menu-seleted-color: rgb(192, 63, 63);
+  --primary-background-color: rgb(254, 226, 226);
+  --primary-menu-font-family: Verdana, sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: var(--primary-menu-font-family);
+}
+.menuSelected{
+  border-left: 3px solid var(--primary-background-color);
+}
+.menuSelected:hover {
+  border-left: 3px solid var(--menu-seleted-color);
+  -moz-border-left-colors: var(--menu-seleted-color);
+  border-top-left-radius:2px;
+  border-bottom-left-radius: 2px;
+  color:var(--menu-seleted-color)
+}
+
+.custombutton{
+  background-color: rgb(198, 7, 7);
+  border-radius: 25px;
+  padding:7px;
+  margin:5px;
+  color:white;
+}
+.input-row{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display:flex;
+  justify-content: space-between;
+}
+.inputtext{
+  border-radius: 20px;
+  padding-left: 10px;
+  border:2px solid var(--primary-text-color)
+}
+
+.enroll-doctor{
+  max-width: fit-content;
+}
+.error-msg{
+  color:var(--menu-seleted-color)
+}
+.enroll-header{
+  border-bottom: 2px solid var(--menu-seleted-color);
+  padding-left: 5px;
 }
